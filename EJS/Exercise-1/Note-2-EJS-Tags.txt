@@ -1,0 +1,16 @@
+What are some EJS tags?
+<%= variable(JS Output) (will be interpreted as javascript, but in addition there will an output) %>
+
+<% (JS Execut)- (This does not give an output)you can put javascript code here (console.log("hello")) %>
+
+<%- (Render HTML)<h1>Hello</h1> whatever goes in here should be interpreted as html  %>
+
+<%%  show <% or %> (This is an escape EJS tag) %%>
+
+<%# This is comment (Stop Execution)%>
+
+<%- include("<>FILE NAME") (Insert another EJS file) %>
+
+
+<% (only code) %> 
+<%= (Output tag) %>

@@ -1,0 +1,14 @@
+Generally we create static files in a public folder.
+we can use app.use(express.static("public"));
+
+Because we've alerady pointed towards the public folder as the loaction of our static files, 
+so in order to define the loaction of any static files you want to use in your index.ejs. You want
+to start the path from /styles/layout.css(public folder is already added).
+
+The reason why we need to predefine to express that we are using these files and they are static, is because of the 
+way the file paths work in node and express, for dynamic pages is different than for static pages.
+
+We can used templating again - to less repeate the code.
+<%- include("header.ejs") %>
+
+

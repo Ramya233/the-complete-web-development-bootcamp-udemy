@@ -1,0 +1,36 @@
+EJS means - Embeded Javascript 
+
+Why do we need to embedd javascript?
+Suppose you have a form where you have to put your name and as soon as you click submit another 
+html page opens up saying hello "name";
+
+Now this case involves 4 steps:
+1)Your html form opens up asking you to enter you name.
+2)Your js file can access the name attribute and get the value of the entered name.
+3)An html file in with we render the value <p> hello (name) </p>
+4)It gets displayed on screen.
+
+Now the question is how do we render the value into an html file?
+The can be done using templating.
+
+We can also do this in 3 steps 
+1)Have the value of the name attribute render in the js file itself (res.send(<h1>Hello ${name}</h1>);)
+2)But doing the above will mix our html and Javascript. We need to separated things in order to handle
+erros.
+
+Separations of Concerns.
+We want to separate everything 1)structure(html) 2)style(css) from our 3)functionality(js)
+separating our front-end and back-end.
+
+In order to do this separating of Concerns.
+We need to use a templating language to do this seperation of Concerns. There are many of them.
+EJS is the templating language used for javascript with express and Node.
+res.sendFile - is only for static files.
+
+How does this work?
+We use res.render ("index.ejs", {
+    name : req.body["name"]  -we pass a javascript object, to pass over some properties, and it's a key value pair
+});
+
+the above key: name -> is passed to ejs file.
+

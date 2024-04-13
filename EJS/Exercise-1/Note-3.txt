@@ -1,0 +1,14 @@
+What is there is no data? 
+what is we sent the file to be rendered (eg: index.ejs) but did not send the data.
+You might think of catching an error using the if else in the ejs file
+But this does not work on an ejs file - it doesn't look to see if the variable actually exsist. so it first tries to use it and than checks. and crashes everything.
+
+We use locals, locals is a way to access all of the var that is sent over with a res.render
+Now you can also manually send res.locals = some data:42;
+that locals var can be accessed in the ejs file.
+
+By using something like locals.nameofvar -> We can use the locals var to check the existence of variables that pass over to ejs.
+
+EJS - Server :
+
+We want users to fill in a form and handle it in the server.
