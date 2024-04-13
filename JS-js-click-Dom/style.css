@@ -1,0 +1,16 @@
+.heading{
+    font-size: 10rem;
+    color: darkorchid;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    all: unset;
+    background-color: rgb(7, 195, 7);
+    border-radius: 2px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
