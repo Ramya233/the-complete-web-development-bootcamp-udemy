@@ -1,0 +1,34 @@
+API - Application Programming Interfaces
+What is an API ?
+An API is a set of commands, functions, protocols, and objects.
+that programmers can use to create software or interact with an external system.
+
+we can get hold of some piece of data from an external website using that websties API.
+We can read their documentation to see what are all the things that we can do, and use their API as a menu of things that we can do using their API.
+
+How to use an API?
+Endpoints - Every API that interacts with an external system like a server will have an endpoint
+
+Paths - To illustrate (https://sv443.net/jokeapi/v2/joke)(can be called the endpoint) - can be the root of the tree 
+        we need to add a programming branch (https://sv443.net/jokeapi/v2/joke/programming)(extra added can be called the path) - we added the programming branch
+
+Now - when we were learning about node and creating our backend, we know that in order to create a new path we have to plan for it ahead of time.
+sometimes we might want to get a piece of data from an API that is something that we can't plan for, example to search for a joke that contains a specific word.
+In order to enter custom quries like this, APIs allow you to provide parameters. Parameters go at the end of the url after a question mark
+There is a key value pair that goes into the url, the key is called contains=thisword
+More that one quries, every subsiquent query follows an & 
+
+
+Parameters - ?contains=words&type=single
+
+Authentication - When the data on a webstie allows programmers to make more complex applications, and is going to be used by 100s of users.
+The main websites have to think very carefully, how to monitize the use of their data/how to limit the use of their data.
+Every time you make a request through the api, they have to identify that it is you and track how ofter you use their data and then charge you or limit you accordingly.
+
+(https://api.openweathermap.org/data/2.5/weather) - end point 
+?q=London&appid=baea4cb86e107db01d3f7f56cdb0948a - First parameter has a key of q=name of the city
+                                                 - next parameter is the aap id = api-key
+
+//Notice that - As we start using more and more parameters and when we have long parameters, it gets
+very difficult to test the long API url using our browsers. You can often make very simple mistakes.
+When we are testing apis, we use a tools called postman. It's free.

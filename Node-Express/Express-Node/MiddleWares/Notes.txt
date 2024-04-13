@@ -1,0 +1,11 @@
+Middlewares is something that sits in btw the raw request and before it is processed by all the route handlers.(get/post)
+
+Middlewares- preprocess the request.
+          - we can use it for logging the request
+          - We can use it for authentication
+          - We can process any errors in the request.
+
+-bodyParser belongs to the preprocessing type.
+-Morgan belong to the logging type
+ 
+The common Middlewares used with node and express is called body-parser.

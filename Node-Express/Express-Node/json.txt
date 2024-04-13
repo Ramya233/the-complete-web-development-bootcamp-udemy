@@ -1,0 +1,28 @@
+What is JSON ?
+JavaScript Object Notation - Because the data looks like javascript objects
+
+But there is a little difference between JSON and javascript object
+
+JSON formate is like : 
+
+coord": {
+        "lon": 72.8479,
+        "lat": 19.0144
+    },
+
+JavaScript is like :
+
+var world ={
+    water : "blue",
+    land : "brown",
+    countries : 195
+}
+
+The resaon we use JSON is because it is human readable, also can be shrinked in size.
+We can colapse the javascript object into a string in the JSON format and once we receive that JSON string, we can 
+build it back into the original javascript object.
+
+JSON is not the only format - that we can use to receive data from an apis, we can also use xml, html.
+JSON is the most favourable as it easy to turn into javascript format.
+
+
